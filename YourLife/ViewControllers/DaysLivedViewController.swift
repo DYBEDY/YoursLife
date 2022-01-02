@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DaysLivedViewController: UIViewController {
 
     @IBOutlet var dateTextField: UITextField!
     @IBOutlet var todayLabel: UILabel!
@@ -19,11 +19,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         textFieldDidBeginEditing(dateTextField)
-    
-        todayLabel.text = "Today is " + getCurrentDate()
-        passedDaysLabel.isHidden = true
         
-    
+        todayLabel.text = "Today is\n \(getCurrentDate())"
+        
+        passedDaysLabel.isHidden = true
+        passedDaysLabel.layer.cornerRadius = 15
+        passedDaysLabel.layer.masksToBounds = true
     }
     
     // MARK: - private methods
@@ -32,8 +33,8 @@ class ViewController: UIViewController {
         dateTextField.text = getDateOfBirth()
         
         passedDaysLabel.isHidden = false
-        passedDaysLabel.text = "You have lived for " + dateInterval(beginDate: getDateOfBirth(),
-                                            endDate: getCurrentDate())
+        passedDaysLabel.layer.cornerRadius = 15
+        passedDaysLabel.text = "\nYou have lived for\n \(dateInterval(beginDate:getDateOfBirth(), endDate: getCurrentDate()))\n"
         view.endEditing(true)
     }
 
@@ -60,13 +61,12 @@ class ViewController: UIViewController {
         guard let begin = dateFormatter.date(from: beginDate) else { return "" }
         guard let end = dateFormatter.date(from: endDate) else { return "" }
         
-        let dateInterval = Calendar.current.dateComponents([.year, .month, .day], from: begin, to: end)
+       let dateInterval = Calendar.current.dateComponents([.day], from: begin, to: end)
         
-        guard let years = dateInterval.year else {return ""}
-        guard let monthes = dateInterval.month else {return ""}
+        
         guard let days = dateInterval.day else {return ""}
         
-        let resultDateInterval = "Years: \(years), Monthes: \(monthes), Days: \(days)"
+        let resultDateInterval = " \(days) days"
         
         return resultDateInterval
     }
@@ -75,7 +75,7 @@ class ViewController: UIViewController {
 
 // MARK: - UITextFielDelegate
 
-extension ViewController: UITextFieldDelegate {
+extension DaysLivedViewController: UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -89,8 +89,8 @@ extension ViewController: UITextFieldDelegate {
         datePicker.datePickerMode = .date
         datePicker.maximumDate = Date()
         
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
+        let calendarToolbar = UIToolbar()
+        calendarToolbar.sizeToFit()
         
         let doneButton = UIBarButtonItem(
             barButtonSystemItem: .done,
@@ -104,8 +104,8 @@ extension ViewController: UITextFieldDelegate {
             action: nil
         )
         
-        toolbar.items = [flexBarButton, doneButton]
-        dateTextField.inputAccessoryView = toolbar
+        calendarToolbar.items = [flexBarButton, doneButton]
+        dateTextField.inputAccessoryView = calendarToolbar
         
     }
     
