@@ -34,7 +34,7 @@ class DaysLivedViewController: UIViewController {
         
         passedDaysLabel.isHidden = false
         passedDaysLabel.layer.cornerRadius = 15
-        passedDaysLabel.text = "\nYou have lived for\n \(dateInterval(beginDate:getDateOfBirth(), endDate: getCurrentDate()))\n"
+        passedDaysLabel.text = "\n You have lived for \n \(dateInterval(beginDate:getDateOfBirth(), endDate: getCurrentDate()))\n"
         view.endEditing(true)
     }
 
