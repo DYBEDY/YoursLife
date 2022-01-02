@@ -15,6 +15,7 @@
 		1CC020E82781DF9D009926D8 /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020E72781DF9D009926D8 /* DevelopersViewController.swift */; };
 		1CC020EA2781DFDF009926D8 /* ApplicationDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020E92781DFDF009926D8 /* ApplicationDescriptionViewController.swift */; };
 		1CC020F02781F158009926D8 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020EF2781F158009926D8 /* Developer.swift */; };
+		1CC020F227821F13009926D8 /* InformationAboutTheDeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020F127821F13009926D8 /* InformationAboutTheDeveloperViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1CC020E72781DF9D009926D8 /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		1CC020E92781DFDF009926D8 /* ApplicationDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDescriptionViewController.swift; sourceTree = "<group>"; };
 		1CC020EF2781F158009926D8 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		1CC020F127821F13009926D8 /* InformationAboutTheDeveloperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationAboutTheDeveloperViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				1CC020E72781DF9D009926D8 /* DevelopersViewController.swift */,
 				1CC020E92781DFDF009926D8 /* ApplicationDescriptionViewController.swift */,
+				1CC020F127821F13009926D8 /* InformationAboutTheDeveloperViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC020F227821F13009926D8 /* InformationAboutTheDeveloperViewController.swift in Sources */,
 				1CC020F02781F158009926D8 /* Developer.swift in Sources */,
 				1CC020EA2781DFDF009926D8 /* ApplicationDescriptionViewController.swift in Sources */,
 				0600515027808E20002B9F6B /* AppDelegate.swift in Sources */,
