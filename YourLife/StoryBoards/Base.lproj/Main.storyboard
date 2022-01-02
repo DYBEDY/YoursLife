@@ -71,11 +71,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvd-3Z-ZHH">
+                                <rect key="frame" x="25" y="81" width="378" height="541"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PiJ-zb-VJb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PiJ-zb-VJb" firstAttribute="bottom" secondItem="qvd-3Z-ZHH" secondAttribute="bottom" constant="250" id="2dP-py-a69"/>
+                            <constraint firstItem="qvd-3Z-ZHH" firstAttribute="leading" secondItem="PiJ-zb-VJb" secondAttribute="leading" constant="25" id="bAm-Lt-M3R"/>
+                            <constraint firstItem="PiJ-zb-VJb" firstAttribute="trailing" secondItem="qvd-3Z-ZHH" secondAttribute="trailing" constant="25" id="ttg-yC-rRC"/>
+                            <constraint firstItem="qvd-3Z-ZHH" firstAttribute="top" secondItem="PiJ-zb-VJb" secondAttribute="top" constant="25" id="wcn-pu-Y6X"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Application Description" id="tQJ-4f-MN7"/>
+                    <connections>
+                        <outlet property="informationLabel" destination="qvd-3Z-ZHH" id="LN3-c7-xlr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZB4-Tx-mqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
