@@ -45,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				0600514E27808E20002B9F6B /* YourLife */,
-				0600516327808EC1002B9F6B /* SupportFiles */,
 				0600514D27808E20002B9F6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +64,7 @@
 				06700E5027832D9D0019C8D9 /* Models */,
 				0600516427808F08002B9F6B /* StoryBoards */,
 				0600516627808F32002B9F6B /* Sources */,
+				0600516327808EC1002B9F6B /* SupportFiles */,
 			);
 			path = YourLife;
 			sourceTree = "<group>";

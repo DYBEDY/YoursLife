@@ -50,6 +50,8 @@ extension LoginViewController {
         
         let totalProgress = Float(currentStepIndex) / Float(steps.count)
         progressView.setProgress(totalProgress, animated: true)
+       
+        
         
         showCurrentStep(for: currentStep.steps)
     }
@@ -67,34 +69,47 @@ extension LoginViewController {
     
     private func applySettingsForFirstScreen() {
         stepLabel.isHidden = false
-       
         
+        nameTextField.isHidden = false
+        surnameTextField.isHidden = false
+       
         birthdayDatePicker.isHidden = true
         finishDatePicker.isHidden = true
         
         startButton.isHidden = true
+        
+        title = "Знакомство"
 
     }
     
     private func applySettingsForSecondScreen() {
         stepLabel.isHidden = false
        
+        nameTextField.isHidden = true
+        surnameTextField.isHidden = true
         
-        birthdayDatePicker.isHidden = false
+        birthdayDatePicker.isHidden =  false
         finishDatePicker.isHidden = true
         
         startButton.isHidden = true
+        
+        title = "Дата Рождения"
 
     }
     
     private func applySettingsForThirdScreen() {
         stepLabel.isHidden = false
       
+        nameTextField.isHidden = true
+        surnameTextField.isHidden = true
         
         birthdayDatePicker.isHidden = true
         finishDatePicker.isHidden = false
         
         startButton.isHidden = false
+        nextButton.isHidden = true
+        
+        title = "Дата ухода"
 
     }
     
@@ -110,5 +125,12 @@ extension LoginViewController {
         }
         
     }
+    
+    private func birthdayDatePickerSettings() {
+       
+        
+        
+    }
+    
 }
 
