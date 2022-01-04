@@ -94,15 +94,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="wqn-Sf-cte">
-                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="6847844400">
-                                    <!--2218-01-01 11:00:00 +0000-->
-                                </date>
-                                <date key="maximumDate" timeIntervalSinceReferenceDate="42065348400">
-                                    <!--3333-12-31 11:00:00 +0000-->
-                                </date>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yag-sv-Ry4">
                                 <rect key="frame" x="173.5" y="771" width="67" height="31"/>
                                 <constraints>
@@ -119,9 +110,16 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b9t-fE-U2e">
                                 <rect key="frame" x="0.0" y="140" width="414" height="4"/>
                             </progressView>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="6Go-ZN-Z1Z">
-                                <rect key="frame" x="0.0" y="340" width="414" height="216"/>
-                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Finish" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fS2-5s-Q22">
+                                <rect key="frame" x="20" y="294" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLb-na-egW">
+                                <rect key="frame" x="20" y="264" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="urN-3V-HkY">
                                 <rect key="frame" x="20" y="306.5" width="374" height="108"/>
                                 <subviews>
@@ -142,30 +140,30 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="urN-3V-HkY" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" constant="20" id="1fT-B2-djn"/>
-                            <constraint firstItem="6Go-ZN-Z1Z" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" id="3lc-yM-u6K"/>
-                            <constraint firstItem="6Go-ZN-Z1Z" firstAttribute="centerY" secondItem="YrX-bn-Vea" secondAttribute="centerY" id="G0Y-4M-Cau"/>
+                            <constraint firstItem="GLb-na-egW" firstAttribute="top" secondItem="b9t-fE-U2e" secondAttribute="bottom" constant="120" id="7u0-aj-n4L"/>
+                            <constraint firstItem="s5p-BB-aWy" firstAttribute="trailing" secondItem="GLb-na-egW" secondAttribute="trailing" constant="20" id="Fos-2d-3j9"/>
                             <constraint firstItem="s5p-BB-aWy" firstAttribute="bottom" secondItem="yag-sv-Ry4" secondAttribute="bottom" constant="60" id="Hg3-o5-jb6"/>
-                            <constraint firstItem="wqn-Sf-cte" firstAttribute="centerY" secondItem="YrX-bn-Vea" secondAttribute="centerY" id="Hkm-Z9-amO"/>
                             <constraint firstItem="EaL-Dy-euQ" firstAttribute="top" secondItem="s5p-BB-aWy" secondAttribute="top" constant="16" id="IM7-cg-tml"/>
                             <constraint firstItem="urN-3V-HkY" firstAttribute="top" secondItem="EaL-Dy-euQ" secondAttribute="bottom" constant="130" id="IOa-72-ItI"/>
                             <constraint firstItem="v3y-FJ-suq" firstAttribute="centerX" secondItem="YrX-bn-Vea" secondAttribute="centerX" id="Jrc-ZC-2in"/>
+                            <constraint firstItem="fS2-5s-Q22" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" constant="20" id="KZa-jf-SSh"/>
                             <constraint firstItem="s5p-BB-aWy" firstAttribute="trailing" secondItem="EaL-Dy-euQ" secondAttribute="trailing" constant="20" id="Mcb-Ma-6V1"/>
                             <constraint firstItem="s5p-BB-aWy" firstAttribute="trailing" secondItem="urN-3V-HkY" secondAttribute="trailing" constant="20" id="ORn-AT-mbT"/>
-                            <constraint firstItem="wqn-Sf-cte" firstAttribute="trailing" secondItem="s5p-BB-aWy" secondAttribute="trailing" id="RbX-nd-gWu"/>
+                            <constraint firstItem="fS2-5s-Q22" firstAttribute="top" secondItem="b9t-fE-U2e" secondAttribute="bottom" constant="150" id="Xf6-W1-xos"/>
                             <constraint firstItem="EaL-Dy-euQ" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" constant="20" id="YtU-1s-s0K"/>
-                            <constraint firstItem="wqn-Sf-cte" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" id="ZL0-Ln-69E"/>
                             <constraint firstItem="b9t-fE-U2e" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" id="gAT-aA-pQJ"/>
-                            <constraint firstItem="6Go-ZN-Z1Z" firstAttribute="trailing" secondItem="s5p-BB-aWy" secondAttribute="trailing" id="jkC-sB-3Wm"/>
+                            <constraint firstItem="s5p-BB-aWy" firstAttribute="trailing" secondItem="fS2-5s-Q22" secondAttribute="trailing" constant="20" id="jhT-3g-u5Z"/>
                             <constraint firstItem="yag-sv-Ry4" firstAttribute="centerX" secondItem="YrX-bn-Vea" secondAttribute="centerX" id="juW-nA-Xbq"/>
                             <constraint firstItem="b9t-fE-U2e" firstAttribute="top" secondItem="s5p-BB-aWy" secondAttribute="top" id="k43-7V-aHu"/>
                             <constraint firstItem="s5p-BB-aWy" firstAttribute="bottom" secondItem="v3y-FJ-suq" secondAttribute="bottom" constant="60" id="v1z-U9-SN9"/>
                             <constraint firstItem="s5p-BB-aWy" firstAttribute="trailing" secondItem="b9t-fE-U2e" secondAttribute="trailing" id="y1b-Qj-wQN"/>
+                            <constraint firstItem="GLb-na-egW" firstAttribute="leading" secondItem="s5p-BB-aWy" secondAttribute="leading" constant="20" id="zvP-Ye-Ckg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Как тебя зовут?" leftItemsSupplementBackButton="YES" id="vVv-ec-ZWw"/>
                     <connections>
-                        <outlet property="birthdayDatePicker" destination="wqn-Sf-cte" id="o4W-dK-WuH"/>
-                        <outlet property="finishDatePicker" destination="6Go-ZN-Z1Z" id="YgT-pP-jhZ"/>
+                        <outlet property="birthdayDate" destination="GLb-na-egW" id="h0n-yO-d8O"/>
+                        <outlet property="finishDate" destination="fS2-5s-Q22" id="dcC-2j-prU"/>
                         <outlet property="nameTextField" destination="dXG-NQ-kiA" id="Xe6-4F-Sbz"/>
                         <outlet property="nextButton" destination="v3y-FJ-suq" id="2XT-bg-HhT"/>
                         <outlet property="progressView" destination="b9t-fE-U2e" id="uBh-4a-gnF"/>
