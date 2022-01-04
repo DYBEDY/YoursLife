@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  YourLife
 //
-//  Created by Roman on 01.01.2022.
+//  Created by Anna Melekhina on 03.01.2022.
 //
 
 import UIKit
