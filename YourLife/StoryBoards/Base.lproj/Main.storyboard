@@ -88,7 +88,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO5-FN-LbW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EO5-FN-LbW">
                                 <rect key="frame" x="25" y="332" width="270" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JfP-ML-jjs"/>
@@ -97,7 +97,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-5W-QBt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKO-5W-QBt">
                                 <rect key="frame" x="25" y="426" width="270" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="47R-c6-x2j"/>
@@ -140,7 +140,7 @@
                     <connections>
                         <outlet property="dateOfBirthLabel" destination="k0L-OH-gWj" id="JcD-pf-rg3"/>
                         <outlet property="developerImage" destination="FgZ-Vr-IwO" id="nH1-Dm-9ZF"/>
-                        <outlet property="youLivedLabel" destination="oKO-5W-QBt" id="0WX-hp-ULJ"/>
+                        <outlet property="youLivedLabel" destination="EO5-FN-LbW" id="xuA-lR-cz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb7-dF-Hhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
