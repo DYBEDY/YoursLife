@@ -7,8 +7,6 @@
 
 import Foundation
 
-let calendar = Calendar.current
-
 struct Developer {
     let fullName: String
     let work: String
@@ -31,9 +29,9 @@ extension Developer {
             Developer(fullName: "Roma",
                       work: "Developer",
                       dateOfBirth: "10.05.1994"),
-           Developer(fullName: "Elisei Mishchenko",
-                     work: "Developer",
-                     dateOfBirth: "10.10.2007")
+            Developer(fullName: "Elisei Mishchenko",
+                      work: "Developer",
+                      dateOfBirth: "10.10.2007")
         ]
     }
 }

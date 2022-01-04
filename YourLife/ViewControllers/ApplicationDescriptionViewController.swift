@@ -9,6 +9,7 @@ import UIKit
 
 class ApplicationDescriptionViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet weak var informationLabel: UILabel!
     
     override func viewDidLoad() {
@@ -17,5 +18,4 @@ class ApplicationDescriptionViewController: UIViewController {
 In this application you can find out how long you have lived and how much you still want to live
 """
     }
-    
 }
