@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol LoginViewControllerDelegate {
+    func setDate()
+}
+
 class FutureDaysViewController: UIViewController {
 
     @IBOutlet var todayLabel: UILabel!
@@ -51,39 +55,11 @@ private func showFutureDays() -> String {
 }
 }
 
-// MARK: - UITextFielDelegate
-extension FutureDaysViewController: UITextFieldDelegate {
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        dateTextField.inputView = datePicker
-//
-//        datePicker.preferredDatePickerStyle = .inline
-//        datePicker.datePickerMode = .date
-//        datePicker.maximumDate = Date()
-//
-//        let calendarToolbar = UIToolbar()
-//        calendarToolbar.sizeToFit()
-//
-//        let doneButton = UIBarButtonItem(
-//            barButtonSystemItem: .done,
-//            target: self,
-//            action: #selector(didTapDone)
-//        )
-//
-//        let flexBarButton = UIBarButtonItem(
-//            barButtonSystemItem: .flexibleSpace,
-//            target: nil,
-//            action: nil
-//        )
-//
-//        calendarToolbar.items = [flexBarButton, doneButton]
-//        dateTextField.inputAccessoryView = calendarToolbar
-//
-//    }
-    
+//MARK: delegate
+
+extension FutureDaysViewController: LoginViewControllerDelegate {
+func setDate() {
+    <#code#>
 }
+}
+
