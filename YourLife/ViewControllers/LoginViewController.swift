@@ -30,6 +30,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        installBackgrounColor()
         
         nameTextField.delegate = self
         surnameTextField.delegate = self
@@ -42,6 +43,15 @@ class LoginViewController: UIViewController {
         addDoneButtonTo(surnameTextField, birthdayDate, finishDate)
        
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let demoVC = segue.destination as? DemoViewController else { return }
+        demoVC.birthday = birthdayDate
+        demoVC.finish = finishDate
+        
+    }
+    
     @IBAction func nextButtonPressed() {
         guard let nameText = nameTextField.text else { return }
         guard let surnameText = surnameTextField.text else { return }
@@ -285,7 +295,7 @@ extension LoginViewController: UITextFieldDelegate {
         }
 }
 
-// Mark: - Alerts
+// MARK: - Alerts
 
 extension LoginViewController {
     private func showAlert(tittle: String, message: String) {
@@ -297,8 +307,20 @@ extension LoginViewController {
     }
 }
 
+// MARK: - Design Methods
 
+extension LoginViewController {
     
+    private func installBackgrounColor() {
+        let gradientLayer = CAGradientLayer()
+               gradientLayer.frame = view.bounds
+               gradientLayer.colors = [
+                UIColor.white.cgColor,
+                   UIColor.systemIndigo.cgColor
+               ]
+               view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+}
     
     
     

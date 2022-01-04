@@ -11,9 +11,23 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        installBackgrounColor()
     }
 
 
 }
 
+// MARK: - Design Methods
+
+extension StartViewController {
+    
+    private func installBackgrounColor() {
+        let gradientLayer = CAGradientLayer()
+               gradientLayer.frame = view.bounds
+               gradientLayer.colors = [
+                UIColor.white.cgColor,
+                   UIColor.systemIndigo.cgColor
+               ]
+               view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+}

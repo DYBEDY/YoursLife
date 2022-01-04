@@ -15,6 +15,7 @@
 		0600515C27808E21002B9F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515A27808E21002B9F6B /* LaunchScreen.storyboard */; };
 		06700E4D278317260019C8D9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06700E4C278317260019C8D9 /* LoginViewController.swift */; };
 		06700E4F27832D980019C8D9 /* TitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06700E4E27832D980019C8D9 /* TitleModel.swift */; };
+		06700E522783CB340019C8D9 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06700E512783CB340019C8D9 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0600515D27808E21002B9F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06700E4C278317260019C8D9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		06700E4E27832D980019C8D9 /* TitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModel.swift; sourceTree = "<group>"; };
+		06700E512783CB340019C8D9 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				0600515327808E20002B9F6B /* StartViewController.swift */,
 				06700E4C278317260019C8D9 /* LoginViewController.swift */,
+				06700E512783CB340019C8D9 /* DemoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				06700E4F27832D980019C8D9 /* TitleModel.swift in Sources */,
 				06700E4D278317260019C8D9 /* LoginViewController.swift in Sources */,
 				0600515427808E20002B9F6B /* StartViewController.swift in Sources */,
+				06700E522783CB340019C8D9 /* DemoViewController.swift in Sources */,
 				0600515027808E20002B9F6B /* AppDelegate.swift in Sources */,
 				0600515227808E20002B9F6B /* SceneDelegate.swift in Sources */,
 			);

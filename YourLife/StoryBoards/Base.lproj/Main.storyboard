@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="36" id="cWO-cr-aYv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHa-nc-GaV">
@@ -31,20 +31,27 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4kT-37-cWA"/>
                                 </constraints>
-                                <string key="text">Yours Life поможет тебе понять ценность каждого отведенного тебе дня. Ставь себе цели и достигай их, двигайся только вперед, цени каждый день и тебя обязаиельно настигнит успех!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <string key="text">Yours Life поможет тебе понять ценность каждого отведенного тебе дня. Ставь себе цели и достигай их, двигайся только вперед, цени каждый день и тебя обязательно настигнит успех!</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.49195135699999998" green="0.67744502110000004" blue="0.98390271409999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" systemColor="systemYellowColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-j1-z0T">
-                                <rect key="frame" x="171" y="771" width="72" height="31"/>
+                                <rect key="frame" x="164.5" y="771" width="85" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="Nh3-3I-1CC"/>
                                     <constraint firstAttribute="height" constant="31" id="XRg-1y-ntV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Начать"/>
+                                <state key="normal" title="START"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" red="0.28666340210000002" green="0.0" blue="0.96954781670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="fjj-Ph-1Zt" kind="presentation" id="CcN-52-dkm"/>
                                 </connections>
@@ -83,7 +90,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" red="0.28666340210000002" green="0.0" blue="0.96954781670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="nextButtonPressed" destination="8YT-VA-b1x" eventType="touchUpInside" id="qiD-iX-IQY"/>
                                 </connections>
@@ -91,24 +105,35 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaL-Dy-euQ">
                                 <rect key="frame" x="20" y="156" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yag-sv-Ry4">
-                                <rect key="frame" x="173.5" y="771" width="67" height="31"/>
+                                <rect key="frame" x="164.5" y="771" width="85" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="0P3-us-3ep"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="ZQc-bQ-Ynh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.01666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="filled" title="START">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.14694924970000001" blue="0.96954781670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="startButtonPressed" destination="8YT-VA-b1x" eventType="touchUpInside" id="xcz-fm-whv"/>
+                                    <segue destination="wvo-iu-wtp" kind="presentation" id="Aev-w0-K6S"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b9t-fE-U2e">
                                 <rect key="frame" x="0.0" y="140" width="414" height="4"/>
+                                <color key="backgroundColor" red="0.8263615199497768" green="0.84417125544878324" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="progressTintColor" red="0.14193279240407097" green="0.36177988262849903" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Finish" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fS2-5s-Q22">
                                 <rect key="frame" x="20" y="294" width="374" height="34"/>
@@ -117,6 +142,8 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLb-na-egW">
                                 <rect key="frame" x="20" y="264" width="374" height="34"/>
+                                <color key="tintColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.083621348969999995" blue="0.58361110559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -125,11 +152,15 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXG-NQ-kiA">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <color key="tintColor" red="0.0" green="0.083621348969999995" blue="0.58361110559999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8rP-qe-K7d">
                                         <rect key="frame" x="0.0" y="74" width="374" height="34"/>
+                                        <color key="tintColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.049508513210000001" blue="0.34553039969999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -176,6 +207,50 @@
             </objects>
             <point key="canvasLocation" x="1558" y="167"/>
         </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="z7G-Be-Bds">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="wvo-iu-wtp" customClass="DemoViewController" customModule="YourLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LEd-39-jY1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="h7u-x0-mx9">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvF-yQ-Zv4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="359.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hh-v9-d2D">
+                                        <rect key="frame" x="0.0" y="418.5" width="374" height="359.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gj9-jF-fwz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gj9-jF-fwz" firstAttribute="trailing" secondItem="h7u-x0-mx9" secondAttribute="trailing" constant="20" id="EQ6-b5-MC0"/>
+                            <constraint firstItem="h7u-x0-mx9" firstAttribute="leading" secondItem="Gj9-jF-fwz" secondAttribute="leading" constant="20" id="FdL-gT-OMn"/>
+                            <constraint firstItem="Gj9-jF-fwz" firstAttribute="bottom" secondItem="h7u-x0-mx9" secondAttribute="bottom" constant="20" id="og5-r1-OVP"/>
+                            <constraint firstItem="h7u-x0-mx9" firstAttribute="top" secondItem="Gj9-jF-fwz" secondAttribute="top" constant="20" id="rCF-dg-teu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="first" destination="qvF-yQ-Zv4" id="Lcy-S9-J7f"/>
+                        <outlet property="second" destination="7Hh-v9-d2D" id="SR2-1N-guF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8o8-QH-dio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2371.0144927536235" y="166.74107142857142"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="9C7-QL-fQD">
             <objects>
@@ -198,6 +273,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
