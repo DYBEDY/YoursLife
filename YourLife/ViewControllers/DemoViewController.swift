@@ -20,7 +20,6 @@ class DemoViewController: UIViewController {
         
         first.text = birthday.text
         second.text = finish.text
-        print("i)
     }
     
 
