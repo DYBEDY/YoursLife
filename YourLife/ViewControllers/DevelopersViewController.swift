@@ -15,6 +15,7 @@ class DevelopersViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 100
+        print("hdhfjdhj")
     }
     
     // MARK: - Table view data source
