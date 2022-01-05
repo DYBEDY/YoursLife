@@ -53,26 +53,17 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func nextButtonPressed() {
-        guard let nameText = nameTextField.text else { return }
-        guard let surnameText = surnameTextField.text else { return }
-        if nameText.isEmpty || surnameText.isEmpty {
-            showAlert(tittle: "Something went wrong", message: "Input correct information")
-        } else {
-            getSecondScreen()
-        }
-         
-
+        getSecondScreen()
 
         
         
     }
     
     @IBAction func startButtonPressed() {
-    }
-    
+    showAlert(tittle: "", message: "")
 }
 
-
+}
 // MARK: - Privat Methods
 
 extension LoginViewController {
@@ -153,26 +144,23 @@ extension LoginViewController {
         if currentStepIndex == 0 {
             guard let nameText = nameTextField.text else { return }
             guard let surnameText = surnameTextField.text else { return }
-            if nameText.isEmpty || surnameText.isEmpty {
+            if nameText.isEmpty {
+                showAlert(tittle: "Something went wrong", message: "Input correct information")
+            } else if surnameText.isEmpty {
                 showAlert(tittle: "Something went wrong", message: "Input correct information")
             } else {
                 currentStepIndex += 1
             }
             
-        } else if currentStepIndex == 1 {
+        } else  {
             guard let birthdayText = birthdayDate.text else { return }
             if birthdayText.isEmpty {
                 showAlert(tittle: "Something went wrong", message: "Input correct information")
             } else {
                 currentStepIndex += 1
             }
-        } else {
-            guard let finishText = finishDate.text else { return }
-            if finishText.isEmpty {
-                showAlert(tittle: "Something went wrong", message: "Input correct information")
-            } else {}
-                
-            }
+        }
+
             
             
             if currentStepIndex < steps.count {
