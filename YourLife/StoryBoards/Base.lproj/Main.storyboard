@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Wpx-nc-PyJ">
-                                <rect key="frame" x="50" y="50" width="220" height="285.5"/>
+                                <rect key="frame" x="50" y="50" width="220" height="355.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd.mm.yyyy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgR-2A-T8M">
                                         <rect key="frame" x="48.5" y="0.0" width="123.5" height="27.5"/>
@@ -26,29 +26,18 @@
                                         <color key="textColor" name="AccentColor"/>
                                         <color key="highlightedColor" systemColor="secondarySystemBackgroundColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gsi-Se-8nl">
-                                        <rect key="frame" x="11.5" y="107.5" width="197.5" height="64.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your date of birth is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdj-ff-e3H">
-                                                <rect key="frame" x="0.0" y="0.0" width="197.5" height="27.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
-                                                <color key="textColor" name="AccentColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of birth" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UpJ-cq-icU">
-                                                <rect key="frame" x="21" y="27.5" width="155" height="37"/>
-                                                <color key="textColor" name="AccentColor"/>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                    </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" You have lived for " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uni-pX-vhp">
-                                        <rect key="frame" x="0.0" y="252" width="220" height="33.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ты прожил уже" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uni-pX-vhp">
+                                        <rect key="frame" x="19.5" y="107.5" width="181" height="31.5"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Думаю, ты успел многое сделать за это время. Узнай сколько тебе осталось, чтобы осуществить свои мечты." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b58-Np-sRQ">
+                                        <rect key="frame" x="0.0" y="219" width="220" height="136.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -64,7 +53,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateTextField" destination="UpJ-cq-icU" id="EES-UB-hXD"/>
                         <outlet property="passedDaysLabel" destination="Uni-pX-vhp" id="80y-Fp-4aG"/>
                         <outlet property="todayLabel" destination="KgR-2A-T8M" id="emF-i7-uob"/>
                     </connections>

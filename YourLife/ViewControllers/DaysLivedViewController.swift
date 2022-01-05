@@ -9,48 +9,28 @@ import UIKit
 
 class DaysLivedViewController: UIViewController {
 
-    @IBOutlet var dateTextField: UITextField!
     @IBOutlet var todayLabel: UILabel!
     @IBOutlet var passedDaysLabel: UILabel!
     
-    let datePicker = UIDatePicker()
+    var birthDate = "07.03.2001"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textFieldDidBeginEditing(dateTextField)
+        todayLabel.text = "Сегодня\n \(getCurrentDate())"
         
-        todayLabel.text = "Today is\n \(getCurrentDate())"
-        
-        passedDaysLabel.isHidden = true
         passedDaysLabel.layer.cornerRadius = 15
         passedDaysLabel.layer.masksToBounds = true
+        passedDaysLabel.text = "\n Ты прожил уже \n \(dateInterval(beginDate: birthDate, endDate: getCurrentDate()))\n"
     }
     
     // MARK: - private methods
-    
-    @objc private func didTapDone() {
-        dateTextField.text = getDateOfBirth()
-        
-        passedDaysLabel.isHidden = false
-        passedDaysLabel.layer.cornerRadius = 15
-        passedDaysLabel.text = "\n You have lived for \n \(dateInterval(beginDate:getDateOfBirth(), endDate: getCurrentDate()))\n"
-        view.endEditing(true)
-    }
-
-   private func getDateOfBirth() -> String {
-        let dateOfBirth = DateFormatter()
-        dateOfBirth.dateFormat = "dd.MM.yyyy"
-        
-        return dateOfBirth.string(from: datePicker.date)
-    }
     
    private func getCurrentDate() -> String {
         let currentDate = DateFormatter()
         currentDate.dateFormat = "dd.MM.yyyy"
         
         return currentDate.string(from: Date())
-        
     }
     
     
@@ -61,53 +41,15 @@ class DaysLivedViewController: UIViewController {
         guard let begin = dateFormatter.date(from: beginDate) else { return "" }
         guard let end = dateFormatter.date(from: endDate) else { return "" }
         
-       let dateInterval = Calendar.current.dateComponents([.day], from: begin, to: end)
-        
+        let dateInterval = Calendar.current.dateComponents([.day], from: begin, to: end)
         
         guard let days = dateInterval.day else {return ""}
         
-        let resultDateInterval = " \(days) days"
-        
+        let resultDateInterval = " \(days) дней"
+            
         return resultDateInterval
     }
 
 }
 
-// MARK: - UITextFielDelegate
-
-extension DaysLivedViewController: UITextFieldDelegate {
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        dateTextField.inputView = datePicker
-        
-        datePicker.preferredDatePickerStyle = .inline
-        datePicker.datePickerMode = .date
-        datePicker.maximumDate = Date()
-        
-        let calendarToolbar = UIToolbar()
-        calendarToolbar.sizeToFit()
-        
-        let doneButton = UIBarButtonItem(
-            barButtonSystemItem: .done,
-            target: self,
-            action: #selector(didTapDone)
-        )
-        
-        let flexBarButton = UIBarButtonItem(
-            barButtonSystemItem: .flexibleSpace,
-            target: nil,
-            action: nil
-        )
-        
-        calendarToolbar.items = [flexBarButton, doneButton]
-        dateTextField.inputAccessoryView = calendarToolbar
-        
-    }
-    
-}
 
