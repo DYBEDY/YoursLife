@@ -60,8 +60,14 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func startButtonPressed() {
-    showAlert(tittle: "", message: "")
-}
+        guard let finishText = finishDate.text else { return }
+        if finishText.isEmpty {
+            showAlert(tittle: "Something went wrong", message: "Input correct information")
+        } else {
+            performSegue(withIdentifier: "demo2", sender: nil)
+        }
+        }
+
 
 }
 // MARK: - Privat Methods
