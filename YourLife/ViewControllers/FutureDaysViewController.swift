@@ -7,9 +7,9 @@
 
 import UIKit
 
-protocol LoginViewControllerDelegate {
-    func setDate()
-}
+//protocol LoginViewControllerDelegate {
+//    func setDate()
+//}
 
 class FutureDaysViewController: UIViewController {
 
@@ -57,9 +57,9 @@ private func showFutureDays() -> String {
 
 //MARK: delegate
 
-extension FutureDaysViewController: LoginViewControllerDelegate {
-func setDate() {
-    <#code#>
-}
-}
+//extension FutureDaysViewController: LoginViewControllerDelegate {
+//func setDate() {
+//    <#code#>
+//}
+//}
 
