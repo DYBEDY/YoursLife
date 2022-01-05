@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0600515027808E20002B9F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600514F27808E20002B9F6B /* AppDelegate.swift */; };
 		0600515227808E20002B9F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600515127808E20002B9F6B /* SceneDelegate.swift */; };
-		0600515427808E20002B9F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600515327808E20002B9F6B /* ViewController.swift */; };
+		0600515427808E20002B9F6B /* DaysLivedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600515327808E20002B9F6B /* DaysLivedViewController.swift */; };
 		0600515727808E20002B9F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515527808E20002B9F6B /* Main.storyboard */; };
 		0600515927808E21002B9F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0600515827808E21002B9F6B /* Assets.xcassets */; };
 		0600515C27808E21002B9F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515A27808E21002B9F6B /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		0600514C27808E20002B9F6B /* YourLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0600514F27808E20002B9F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0600515127808E20002B9F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0600515327808E20002B9F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0600515327808E20002B9F6B /* DaysLivedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysLivedViewController.swift; sourceTree = "<group>"; };
 		0600515627808E20002B9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0600515827808E21002B9F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0600515B27808E21002B9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		0600516527808F1B002B9F6B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0600515327808E20002B9F6B /* ViewController.swift */,
+				0600515327808E20002B9F6B /* DaysLivedViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0600515427808E20002B9F6B /* ViewController.swift in Sources */,
+				0600515427808E20002B9F6B /* DaysLivedViewController.swift in Sources */,
 				0600515027808E20002B9F6B /* AppDelegate.swift in Sources */,
 				0600515227808E20002B9F6B /* SceneDelegate.swift in Sources */,
 				060051682780938E002B9F6B /* Models.swift in Sources */,
@@ -333,7 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HS3UN4N9J;
+				DEVELOPMENT_TEAM = K9A4ZL65HH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YourLife/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -362,7 +362,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HS3UN4N9J;
+				DEVELOPMENT_TEAM = K9A4ZL65HH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YourLife/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
