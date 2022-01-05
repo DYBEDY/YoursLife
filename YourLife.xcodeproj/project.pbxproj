@@ -12,6 +12,7 @@
 		0600515727808E20002B9F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515527808E20002B9F6B /* Main.storyboard */; };
 		0600515927808E21002B9F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0600515827808E21002B9F6B /* Assets.xcassets */; };
 		0600515C27808E21002B9F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515A27808E21002B9F6B /* LaunchScreen.storyboard */; };
+		1C0F83682785C9C3008BBECD /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0F83672785C9C3008BBECD /* Users.swift */; };
 		1C3F282A2784B63B001E2D89 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F28292784B63B001E2D89 /* UsersViewController.swift */; };
 		1C3F282C2784B757001E2D89 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3F282B2784B757001E2D89 /* DataManager.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		0600515827808E21002B9F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0600515B27808E21002B9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0600515D27808E21002B9F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0F83672785C9C3008BBECD /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		1C3F28292784B63B001E2D89 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		1C3F282B2784B757001E2D89 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +63,7 @@
 				0600516327808EC1002B9F6B /* SupportFiles */,
 				0600516527808F1B002B9F6B /* ViewControllers */,
 				060051692780939A002B9F6B /* Models */,
+				1C0F83662785C952008BBECD /* Services */,
 				0600516427808F08002B9F6B /* StoryBoards */,
 				0600516627808F32002B9F6B /* Sources */,
 			);
@@ -105,9 +108,17 @@
 		060051692780939A002B9F6B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1C3F282B2784B757001E2D89 /* DataManager.swift */,
+				1C0F83672785C9C3008BBECD /* Users.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1C0F83662785C952008BBECD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1C3F282B2784B757001E2D89 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			files = (
 				0600515027808E20002B9F6B /* AppDelegate.swift in Sources */,
 				1C3F282C2784B757001E2D89 /* DataManager.swift in Sources */,
+				1C0F83682785C9C3008BBECD /* Users.swift in Sources */,
 				1C3F282A2784B63B001E2D89 /* UsersViewController.swift in Sources */,
 				0600515227808E20002B9F6B /* SceneDelegate.swift in Sources */,
 			);
@@ -333,7 +345,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HS3UN4N9J;
+				DEVELOPMENT_TEAM = 5QXTTDX7K7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YourLife/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -347,7 +359,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.dybedy.YourLife;
+				PRODUCT_BUNDLE_IDENTIFIER = donate.YourLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -362,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3HS3UN4N9J;
+				DEVELOPMENT_TEAM = 5QXTTDX7K7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YourLife/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -376,7 +388,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.dybedy.YourLife;
+				PRODUCT_BUNDLE_IDENTIFIER = donate.YourLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
