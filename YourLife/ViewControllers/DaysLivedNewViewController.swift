@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  DaysLivedNewViewController.swift
 //  YourLife
 //
-//  Created by Roman on 01.01.2022.
+//  Created by Диана Овечкина on 06.01.2022.
 //
 
 import UIKit
 
-class DaysLivedViewController: UIViewController {
+class DaysLivedNewViewController: UIViewController {
 
     @IBOutlet var todayLabel: UILabel!
     @IBOutlet var passedDaysLabel: UILabel!
@@ -51,5 +51,4 @@ class DaysLivedViewController: UIViewController {
     }
 
 }
-
 
