@@ -56,11 +56,17 @@ class LoginViewController: UIViewController {
         getSecondScreen()
 
         
-        
+    
     }
     
     @IBAction func startButtonPressed() {
-    showAlert(tittle: "", message: "")
+//        guard let nameText = finishDate.text else { return }
+        if finishDate.text!.isEmpty {
+            print("Hello")
+        showAlert(tittle: "b jhb", message: "nkj")
+            print("Hello")
+            return
+        }
 }
 
 }
