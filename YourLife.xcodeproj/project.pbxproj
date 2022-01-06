@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		0600515027808E20002B9F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600514F27808E20002B9F6B /* AppDelegate.swift */; };
 		0600515227808E20002B9F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600515127808E20002B9F6B /* SceneDelegate.swift */; };
-		0600515727808E20002B9F6B /* elkaMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515527808E20002B9F6B /* elkaMain.storyboard */; };
 		0600515927808E21002B9F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0600515827808E21002B9F6B /* Assets.xcassets */; };
-		0600515C27808E21002B9F6B /* elkaLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0600515A27808E21002B9F6B /* elkaLaunchScreen.storyboard */; };
+		1C0006372786CC8E00CF07F2 /* elkaStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0006362786CC8E00CF07F2 /* elkaStoryboard.storyboard */; };
+		1C0006392786CC9D00CF07F2 /* elkaLaunch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C0006382786CC9D00CF07F2 /* elkaLaunch Screen.storyboard */; };
 		1CC020E82781DF9D009926D8 /* DevelopersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020E72781DF9D009926D8 /* DevelopersViewController.swift */; };
 		1CC020EA2781DFDF009926D8 /* ApplicationDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020E92781DFDF009926D8 /* ApplicationDescriptionViewController.swift */; };
 		1CC020F02781F158009926D8 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC020EF2781F158009926D8 /* Developer.swift */; };
@@ -22,10 +22,10 @@
 		0600514C27808E20002B9F6B /* YourLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YourLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0600514F27808E20002B9F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0600515127808E20002B9F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0600515627808E20002B9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/elkaMain.storyboard; sourceTree = "<group>"; };
 		0600515827808E21002B9F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0600515B27808E21002B9F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/elkaLaunchScreen.storyboard; sourceTree = "<group>"; };
 		0600515D27808E21002B9F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C0006362786CC8E00CF07F2 /* elkaStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = elkaStoryboard.storyboard; sourceTree = "<group>"; };
+		1C0006382786CC9D00CF07F2 /* elkaLaunch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "elkaLaunch Screen.storyboard"; sourceTree = "<group>"; };
 		1CC020E72781DF9D009926D8 /* DevelopersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersViewController.swift; sourceTree = "<group>"; };
 		1CC020E92781DFDF009926D8 /* ApplicationDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDescriptionViewController.swift; sourceTree = "<group>"; };
 		1CC020EF2781F158009926D8 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
@@ -84,8 +84,8 @@
 		0600516427808F08002B9F6B /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				0600515527808E20002B9F6B /* elkaMain.storyboard */,
-				0600515A27808E21002B9F6B /* elkaLaunchScreen.storyboard */,
+				1C0006362786CC8E00CF07F2 /* elkaStoryboard.storyboard */,
+				1C0006382786CC9D00CF07F2 /* elkaLaunch Screen.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0600515C27808E21002B9F6B /* elkaLaunchScreen.storyboard in Resources */,
+				1C0006372786CC8E00CF07F2 /* elkaStoryboard.storyboard in Resources */,
 				0600515927808E21002B9F6B /* Assets.xcassets in Resources */,
-				0600515727808E20002B9F6B /* elkaMain.storyboard in Resources */,
+				1C0006392786CC9D00CF07F2 /* elkaLaunch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,25 +197,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		0600515527808E20002B9F6B /* elkaMain.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0600515627808E20002B9F6B /* Base */,
-			);
-			name = elkaMain.storyboard;
-			sourceTree = "<group>";
-		};
-		0600515A27808E21002B9F6B /* elkaLaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0600515B27808E21002B9F6B /* Base */,
-			);
-			name = elkaLaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0600515E27808E21002B9F6B /* Debug */ = {
@@ -346,7 +327,7 @@
 				INFOPLIST_FILE = YourLife/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = elkaStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -375,7 +356,7 @@
 				INFOPLIST_FILE = YourLife/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = elkaStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -23,7 +23,7 @@ class DevelopersViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Developer", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "developer", for: indexPath)
         
         let developer = developerList[indexPath.row]
         
